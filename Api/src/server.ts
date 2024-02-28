@@ -13,6 +13,8 @@ app.use(cors());
 
 app.use("/api", router);
 
-app.listen(4004, () => {
-  console.log("server is running", `127.0.0.1:${4004}`);
+const port = process.env.PORT ?? 4004;
+
+app.listen(port, () => {
+  console.log("server is running", `127.0.0.1:${port}`);
 });
