@@ -5,7 +5,7 @@ import {
   HTTP_NOT_FOUND_MESSAGE,
   HTTP_OK_MESSAGE,
   HTTP_UNAUTHORIZED_MESSAGE,
-} from "../constants";
+} from "@src/constants";
 import { Request, Response } from "express";
 
 interface ErrorResponse {

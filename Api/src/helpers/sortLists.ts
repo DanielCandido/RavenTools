@@ -1,4 +1,4 @@
-import { ProductTradepack, Tradepack } from "../types";
+import { ProductTradepack, Tradepack } from "@src/types";
 
 export const sortTradepackList = (a: Tradepack, b: Tradepack) => {
   if (a.name < b.name) {

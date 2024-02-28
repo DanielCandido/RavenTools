@@ -1,5 +1,5 @@
 import express from "express";
-import ArcheTypeController from "../controllers/ArcheTypeController";
+import ArcheTypeController from "@src/controllers/ArcheTypeController";
 
 const router = express.Router();
 const productController = new ArcheTypeController();

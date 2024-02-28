@@ -1,4 +1,4 @@
-import { ProductNames, TradePackNames } from "@/constants/tradepacks";
+import { ProductNames, TradePackNames } from "@src/constants/tradepacks";
 
 export interface ProductTradepack {
   name: string;

@@ -1,5 +1,5 @@
-import { Tradepack, ProductPrice } from "../types/";
-import { sortTradepackList } from "../helpers/sortLists";
+import { Tradepack, ProductPrice } from "@src/types/";
+import { sortTradepackList } from "@src/helpers/sortLists";
 
 export const TradePackNames = {
   "Aged Meat": "Aged Meat",

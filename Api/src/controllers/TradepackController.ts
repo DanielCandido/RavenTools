@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import httpResponse from "../helpers/http-response";
-import { tradepacks } from "../constants";
+import httpResponse from "@src/helpers/http-response";
+import { tradepacks } from "@src/constants";
 
 export default class TradepackController {
   constructor() {}

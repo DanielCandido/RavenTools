@@ -4,28 +4,28 @@
         "emitDecoratorMetadata": true,
         "resolveJsonModule": true,
         "sourceMap": true,
-        "modeResolution": "bundler",
         "lib": [
             "esnext"
         ],
         "esModuleInterop": true,
         "skipLibCheck": true,
+        "baseUrl": "./",
         "paths": {
-            "@/*": [
+            "@src/*": [
                 "./src/*"
             ]
         },
         "outDir": "./dist",
         "target": "es6",
-        "module": "commonjs",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
         "strict": true,
         "types": [
             "reflect-metadata"
         ]
     },
     "include": [
-        "src/**/*.ts",
-        "**/*.ts"
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules"

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import httpResponse from "../helpers/http-response";
+import httpResponse from "@src/helpers/http-response";
 
 const archetypes = [
   "Archery",
