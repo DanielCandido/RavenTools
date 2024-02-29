@@ -13,6 +13,9 @@
         "paths": {
             "@src/*": [
                 "./src/*"
+            ],
+            "@public/*": [
+                "./public/*"
             ]
         },
         "outDir": "./dist",
@@ -28,6 +31,13 @@
         "src/**/*.ts"
     ],
     "exclude": [
-        "node_modules"
-    ]
+        "node_modules",
+        "public"
+    ],
+    "ts-node": {
+        "ignore": [
+            "(?:^|/)node_modules/",
+            "(?:^|/)public/"
+        ]
+    }
 }
