@@ -7,7 +7,7 @@ import ProductPriceList from "@/components/ProductPrices";
 import { ProductPrice, Tradepack } from "@/types";
 import fetchData from "@/hooks/fetchData";
 import RouterIcon from "@/icons/RouterIcon";
-import { Icon } from "@/components/Icon";
+import Icon from "@/components/Icon";
 import TradepackIcon from "@/icons/TradepackIcon";
 import ProductIcon from "@/icons/ProductIcon";
 import ResetIcon from "@/icons/ResetIcon";
