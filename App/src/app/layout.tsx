@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Menu from "@/components/menu";
+import Menu from "@/components/Menu";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable}`}>
+      <body className={`font-mono ${montserrat.variable}`}>
         <Menu />
         {children}
       </body>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Archetype } from "@/constants";
-import ImageIcon from "@/components/imageIcon";
+import ImageIcon from "@/components/ImageIcon";
 import React from "react";
 import fetchData from "@/hooks/fetchData";
 
@@ -24,18 +24,21 @@ export const ArcheTypeSelect = ({ onSelect, selected }: Props) => {
   }, []);
 
   return (
-    <div className="flex flex-row justify-around w-auto max-w-[500px]">
-      {archetypes.map((e) => (
-        <div
-          key={e}
-          className={`p-2 cursor-pointer ${
-            selected === e ? "bg-slate-500 rounded-md" : ""
-          }`}
-          onClick={() => onSelect(e)}
-        >
-          <ImageIcon name={e} type="archetypes" />
-        </div>
-      ))}
+    <div className="flex flex-col gap-4 items-center justify-center">
+      <p>Arquétipo:</p>
+      <div className="flex flex-row justify-around w-auto max-w-[500px] gap-4">
+        {archetypes.map((e) => (
+          <div
+            key={e}
+            className={`cursor-pointer hover:opacity-50  ${
+              selected === e ? "bg-slate-500 rounded-md" : ""
+            }`}
+            onClick={() => onSelect(e)}
+          >
+            <ImageIcon name={e} type="archetypes" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

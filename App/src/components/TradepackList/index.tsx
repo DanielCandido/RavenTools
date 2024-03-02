@@ -1,6 +1,6 @@
 "use client";
 import { Tradepack } from "@/types";
-import ImageIcon from "@/components/imageIcon";
+import ImageIcon from "@/components/ImageIcon";
 
 interface Props {
   tradepacks: Tradepack[];

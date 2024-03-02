@@ -1,5 +1,5 @@
 "use client";
-import ImageIcon from "@/components/imageIcon";
+import ImageIcon from "@/components/ImageIcon";
 import { ProductPrice } from "@/types";
 
 interface Props {
