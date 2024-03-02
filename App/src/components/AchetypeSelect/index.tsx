@@ -1,7 +1,7 @@
 "use client";
 
 import { Archetype } from "@/constants";
-import ImageIcon from "@/components/ImageIcon";
+import ImageIcon from "@/components/ImgIcon";
 import React from "react";
 import fetchData from "@/hooks/fetchData";
 

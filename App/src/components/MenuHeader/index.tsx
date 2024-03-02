@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import ImageIcon from "@/components/ImageIcon";
+import ImageIcon from "@/components/ImgIcon";
 import { usePathname } from "next/navigation";
 import React from "react";
 

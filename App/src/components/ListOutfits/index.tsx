@@ -1,7 +1,7 @@
 import { IOutfit } from "@/types";
 import Image from "next/image";
 import Difficult from "@/components/Difficult";
-import ImageIcon from "@/components/ImageIcon";
+import ImageIcon from "@/components/ImgIcon";
 
 interface Props {
   outfits: IOutfit[];
