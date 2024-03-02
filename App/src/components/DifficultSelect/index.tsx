@@ -1,5 +1,5 @@
 import { IDifficult } from "@/types";
-import Difficult from "../Difficult";
+import Difficult from "@/components/Difficult";
 
 interface Props {
   selectedDifficulty?: IDifficult;

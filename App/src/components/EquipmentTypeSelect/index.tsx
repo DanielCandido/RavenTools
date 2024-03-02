@@ -1,5 +1,5 @@
 import { TEquipmentType } from "@/types";
-import ImageIcon from "../ImageIcon";
+import ImageIcon from "@/components/ImageIcon";
 
 interface Props {
   onSelectEquipmentType: (value: TEquipmentType) => void;
