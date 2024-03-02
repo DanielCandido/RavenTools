@@ -1,10 +1,10 @@
-export interface Props {
+interface Props {
   background?: string;
   borderColor?: string;
   children: React.JSX.Element;
 }
 
-export const Icon = ({
+const Icon = ({
   background = "#fffaff",
   borderColor = "#BFC0C0",
   children,
@@ -17,3 +17,5 @@ export const Icon = ({
     </div>
   );
 };
+
+export default Icon;
