@@ -1,19 +1,19 @@
 export interface Props {
   background?: string;
   borderColor?: string;
-  Icon: React.JSX.Element;
+  children: React.JSX.Element;
 }
 
 export const Icon = ({
   background = "#fffaff",
   borderColor = "#BFC0C0",
-  Icon,
+  children,
 }: Props) => {
   return (
     <div
       className={`flex items-center justify-center p-2 rounded-md border-[#BFC0C0]-[1px] bg-[#fffaff]`}
     >
-      {Icon}
+      {children}
     </div>
   );
 };

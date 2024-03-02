@@ -225,15 +225,9 @@ export default function Home() {
         <div className="lg:w-1/2 w-full bg-gray-800 border border-gray-700 rounded-lg shadow p-4 flex flex-col gap-4">
           <div className="lg:flex-row flex-col flex lg:justify-between gap-4 lg:gap-0">
             <div className="flex flex-row gap-4">
-              <Icon
-                Icon={
-                  <TradepackIcon
-                    color="#050613cccc"
-                    height="24px"
-                    width="24px"
-                  />
-                }
-              />
+              <Icon>
+                <TradepackIcon color="#050613cccc" height="24px" width="24px" />
+              </Icon>
               <h2 className="font-light text-gray-100 text-3xl">Tradepacks</h2>
             </div>
             <input
@@ -267,11 +261,9 @@ export default function Home() {
         <div className="flex flex-col lg:w-1/2 w-full gap-4">
           <div className="w-full bg-gray-800 border border-gray-700 rounded-lg shadow flex flex-col gap-3">
             <div className="flex flex-row justify-start items-center gap-4 p-4 w-full">
-              <Icon
-                Icon={
-                  <RouterIcon color="#050613cccc" height="24px" width="24px" />
-                }
-              />
+              <Icon>
+                <RouterIcon color="#050613cccc" height="24px" width="24px" />
+              </Icon>
 
               <h2 className="font-light text-gray-100 text-3xl">Rota</h2>
             </div>
@@ -281,15 +273,9 @@ export default function Home() {
           <div className="w-full bg-gray-800 border border-gray-700 rounded-lg shadow flex flex-col gap-3">
             <div className="flex justify-between items-start">
               <div className="flex flex-row justify-start items-center gap-4 p-4 w-full">
-                <Icon
-                  Icon={
-                    <ProductIcon
-                      color="#050613cccc"
-                      height="24px"
-                      width="24px"
-                    />
-                  }
-                />
+                <Icon>
+                  <ProductIcon color="#050613cccc" height="24px" width="24px" />
+                </Icon>
 
                 <h2 className="font-light text-gray-100 text-3xl">Produtos</h2>
               </div>
