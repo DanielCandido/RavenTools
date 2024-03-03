@@ -32,9 +32,11 @@ const ListOutfit = ({ outfits }: Props) => {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium truncatetext-white">
-                {e.npc.name}
+                NPC: {e.npc.name}
               </p>
-              <p className="text-smtruncate text-gray-400">{e.npc.location}</p>
+              <p className="text-smtruncate text-gray-400">
+                Location: {e.npc.location}
+              </p>
             </div>
             <div className="flex flex-col flex-1 min-w-0 gap-2">
               <div className="text-sm font-medium truncatetext-white flex gap-2 items-center">

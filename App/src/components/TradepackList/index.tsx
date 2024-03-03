@@ -38,7 +38,7 @@ const TradepackList = ({
                 onChange={() => onSelectTradepack(tradepack)}
                 checked={selectedTradepack?.name === tradepack.name}
               />
-              <label>Selecionar</label>
+              <label>Select</label>
             </div>
             <div className="flex lg:flex-row flex-col gap-2">
               <div>
@@ -66,7 +66,7 @@ const TradepackList = ({
                   htmlFor="number-input"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Demanda:
+                  Demand:
                 </label>
                 <input
                   type="number"
@@ -92,7 +92,7 @@ const TradepackList = ({
           <div className="flex lg:flex-row flex-col w-full gap-4">
             <div className="flex flex-col p-3 bg-slate-200 rounded-md lg:w-1/2 w-full">
               <h3 className="border-b-gray-800 text-gray-800 font-semibold text-xl border-b-2 z-10">
-                Produtos
+                Products
               </h3>
               <div className="flex flex-row flex-wrap justify-around">
                 {tradepack.products.map((product, index) => (
@@ -111,7 +111,7 @@ const TradepackList = ({
             </div>
             <div className="flex flex-col p-3 bg-slate-200 rounded-md z-10 lg:w-1/2 w-full gap-4">
               <h3 className="border-b-gray-800 text-gray-800 font-semibold text-xl border-b-2">
-                Financeiro
+                Financial
               </h3>
               <div>{financial(tradepack)}</div>
             </div>

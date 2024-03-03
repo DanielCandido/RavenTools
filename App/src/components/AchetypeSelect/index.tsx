@@ -25,7 +25,7 @@ export const ArcheTypeSelect = ({ onSelect, selected }: Props) => {
 
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
-      <p>Arquétipo:</p>
+      <p>Archetype:</p>
       <div className="flex flex-row justify-around w-auto max-w-[500px] gap-4">
         {archetypes.map((e) => (
           <div

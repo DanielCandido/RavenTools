@@ -8,20 +8,20 @@ interface Props {
 
 const Difficult = ({ difficult, active = false, onChangeValue }: Props) => {
   let bgColor = "bg-gray-700";
-  let difficultText = "Desconhecido";
+  let difficultText = "unknown";
 
   switch (difficult) {
     case "easy":
       bgColor = "bg-green-700";
-      difficultText = "Fácil";
+      difficultText = "easy";
       break;
     case "medium":
       bgColor = "bg-yellow-700";
-      difficultText = "Médio";
+      difficultText = "medium";
       break;
     case "hard":
       bgColor = "bg-red-700";
-      difficultText = "Difícil";
+      difficultText = "hard";
       break;
     case "unknown":
     default:

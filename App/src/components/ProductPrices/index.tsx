@@ -11,7 +11,7 @@ const ProductPriceList = ({ products, onChangeProductPrice }: Props) => {
   return (
     <div className="flex flex-col p-3">
       <p className="font-semibold text-lg border-slate-100 border-b-2 mb-4">
-        Preço dos produtos
+        Product price
       </p>
       {products.map((product) => (
         <div
@@ -23,7 +23,7 @@ const ProductPriceList = ({ products, onChangeProductPrice }: Props) => {
             <p className="font-semibold text-lg ml-3">{product.name}</p>
           </div>
           <div className="flex flex-col">
-            <label>Preço</label>
+            <label>Price</label>
             <input
               className="p-2 text-black bg-slate-200 border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none

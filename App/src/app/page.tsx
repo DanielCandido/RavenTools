@@ -195,16 +195,16 @@ export default function Home() {
     return (
       <div className="flex flex-col">
         <div className="text-black">
-          <strong>Custo: </strong>
+          <strong>Cost: </strong>
           {totalMount}
         </div>
 
         <div className="text-black">
-          <strong>Preço de venda: </strong>
+          <strong>Sell: </strong>
           {sellPrice}
         </div>
         <div className="text-black">
-          <strong>Lucro: </strong>
+          <strong>Profit: </strong>
           <label
             className={`${profit < 0 ? "text-red-500" : "text-green-500"}`}
           >
@@ -265,7 +265,7 @@ export default function Home() {
                 <RouterIcon color="#050613cccc" height="24px" width="24px" />
               </Icon>
 
-              <h2 className="font-light text-gray-100 text-3xl">Rota</h2>
+              <h2 className="font-light text-gray-100 text-3xl">Route</h2>
             </div>
             <TileSelect tiles={tiles} onChangeTiles={onChangeTiles} />
           </div>
@@ -277,7 +277,7 @@ export default function Home() {
                   <ProductIcon color="#050613cccc" height="24px" width="24px" />
                 </Icon>
 
-                <h2 className="font-light text-gray-100 text-3xl">Produtos</h2>
+                <h2 className="font-light text-gray-100 text-3xl">Products</h2>
               </div>
               <div
                 className="cursor-pointer p-4"

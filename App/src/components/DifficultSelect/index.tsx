@@ -9,7 +9,7 @@ interface Props {
 const DifficultSelect = ({ selectedDifficulty, onSelectDifficulty }: Props) => {
   return (
     <div className="flex flex-col gap-4 justify-center items-center">
-      <p>Dificuldade:</p>
+      <p>Difficulty:</p>
       <div className="flex items-center gap-4">
         <Difficult
           onChangeValue={onSelectDifficulty}

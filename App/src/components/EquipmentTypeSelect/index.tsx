@@ -12,7 +12,7 @@ const EquipmentTypeSelect = ({
 }: Props) => {
   return (
     <div className="flex flex-col justify-center items-center gap-4">
-      <p>Tipo de equipamento:</p>
+      <p>Equipment type:</p>
       <div className="flex items-center justify-center gap-4">
         <div
           className={`p-2 bg-slate-400 rounded-full cursor-pointer hover:bg-slate-700 ${

@@ -54,7 +54,7 @@ const TileSelect = ({ tiles, onChangeTiles }: Props) => {
             htmlFor="countries"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Selecione a origem
+            Select origin
           </label>
           <select
             value={originSelected}
@@ -64,7 +64,7 @@ const TileSelect = ({ tiles, onChangeTiles }: Props) => {
               onSelectOrigin(e.target.value);
             }}
           >
-            <option>Selecione</option>
+            <option>Select</option>
             {optionsOrigin.map((e) => (
               <option key={e} value={e}>
                 {e}
@@ -77,7 +77,7 @@ const TileSelect = ({ tiles, onChangeTiles }: Props) => {
             htmlFor="countries"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Select Destino
+            Select destination
           </label>
           <select
             value={destinySelected}
@@ -87,7 +87,7 @@ const TileSelect = ({ tiles, onChangeTiles }: Props) => {
               onSelectDestiny(e.target.value);
             }}
           >
-            <option>Selecione</option>
+            <option>Select</option>
             {optionsDestiny.map((e) => (
               <option key={e} value={e}>
                 {e}
