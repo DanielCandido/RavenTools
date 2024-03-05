@@ -9,7 +9,7 @@ interface Props {
 
 const ListOutfit = ({ outfits }: Props) => {
   return (
-    <ul className="divide-y divide-gray-700 w-full">
+    <ul className="divide-y divide-gray-700 w-full p-2">
       {outfits.map((e, index) => (
         <li key={index} className="pb-3 sm:pb-4">
           <div className="flex items-center space-x-4 rtl:space-x-reverse gap-2">
@@ -47,6 +47,13 @@ const ListOutfit = ({ outfits }: Props) => {
                 <ImageIcon name={e.equipmentType} type="images" />
                 <p>{e.equipmentType}</p>
               </div>
+            </div>
+            <div className="flex flex-col flex-1 min-w-0 gap-2">
+              {e.products.map((product, index) => (
+                <p key={index}>
+                  {product.name} - {product.amount}X
+                </p>
+              ))}
             </div>
           </div>
         </li>

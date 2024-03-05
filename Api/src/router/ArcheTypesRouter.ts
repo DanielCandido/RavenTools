@@ -6,5 +6,6 @@ const archetypeController = new ArcheTypeController();
 
 router.get("/", archetypeController.get);
 router.get("/outfits", archetypeController.outfits);
+router.post("/outfits", archetypeController.createOutifit);
 
 export default router;

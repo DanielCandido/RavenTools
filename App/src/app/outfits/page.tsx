@@ -103,7 +103,9 @@ export default function Outfits() {
           selectedEquipmentType={selectedEquipmentType}
         />
       </div>
-      <ListOutfit outfits={filteredItems} />
+      <div className="bg-slate-600 w-full flex m-10">
+        <ListOutfit outfits={filteredItems} />
+      </div>
     </main>
   );
 }

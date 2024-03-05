@@ -1,10 +1,16 @@
+import "reflect-metadata";
+import dotenv from "dotenv";
+dotenv.config();
+import "module-alias/register";
+import database from "@src/config/database";
+import ArcheTypeRepository from "@src/repository/ArcheTypeRepository";
 import { Archetype, ProductTradepack } from "@src/types";
 
 interface Product extends ProductTradepack {
   description?: string;
 }
 
-interface Outfit {
+export interface Outfit {
   name: string;
   image?: string;
   description: string;
@@ -161,7 +167,7 @@ export const outfits: Outfit[] = [
     },
     location: "Ravencrest",
     difficult: "hard",
-    equipmentType: "Head",
+    equipmentType: "Weapon",
     archetype: "Warfare",
     products: [
       {
@@ -189,4 +195,86 @@ export const outfits: Outfit[] = [
       },
     ],
   },
+  {
+    name: "Darksteel Axe",
+    description: "",
+    npc: {
+      name: "Aknadin",
+      location: "Dras Narda",
+    },
+    location: "Dras Narda",
+    difficult: "unknown",
+    equipmentType: "Weapon",
+    archetype: "Warfare",
+    products: [
+      {
+        name: "Underearth Gems",
+        amount: 575,
+      },
+      {
+        name: "Aether Spore Cluste",
+        amount: 500,
+      },
+      {
+        name: "Frostiron Ore chunks",
+        amount: 500,
+        description: "",
+      },
+      {
+        name: "Mutated Hearts",
+        amount: 3000,
+        description: "Elf drop",
+      },
+      {
+        name: "Otherwordly Brain",
+        amount: 1,
+      },
+    ],
+  },
+  {
+    name: "Ominous Axe",
+    description: "",
+    npc: {
+      name: "Hector",
+      location: "Ravencrest",
+    },
+    location: "Ravencrest",
+    difficult: "unknown",
+    equipmentType: "Weapon",
+    archetype: "Warfare",
+    products: [],
+  },
+  {
+    name: "Ramshead Axe",
+    description: "",
+    npc: {
+      name: "Dealer Jack",
+      location: "Riverend Post",
+    },
+    location: "Riverend Post",
+    difficult: "hard",
+    equipmentType: "Weapon",
+    archetype: "Warfare",
+    products: [
+      {
+        name: "Brotherhood Cloaks",
+        amount: 600,
+      },
+      {
+        name: "Marks of Ghaz",
+        amount: 20,
+      },
+    ],
+  },
 ];
+
+// const archetypeRepository = new ArcheTypeRepository(database);
+
+// archetypeRepository
+//   .bulkInsertOutfits(outfits)
+//   .then((e) => {
+//     console.info("Outfits created: ", e.insertedCount);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });

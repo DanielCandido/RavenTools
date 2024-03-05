@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-mono ${montserrat.variable}`}>
+      <body className={`font-mono ${montserrat.variable} min-h-screen`}>
         <Menu />
         {children}
       </body>

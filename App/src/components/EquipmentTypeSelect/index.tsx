@@ -4,15 +4,24 @@ import ImageIcon from "@/components/ImgIcon";
 interface Props {
   onSelectEquipmentType: (value: TEquipmentType) => void;
   selectedEquipmentType?: TEquipmentType;
+  textLabel?: string;
+  style?: string;
 }
 
 const EquipmentTypeSelect = ({
   onSelectEquipmentType,
   selectedEquipmentType,
+  style,
+  textLabel,
 }: Props) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
-      <p>Equipment type:</p>
+    <div className={style ?? "flex flex-col justify-center items-center gap-4"}>
+      <label
+        htmlFor="name"
+        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >
+        {textLabel ?? "Difficulty:"}
+      </label>
       <div className="flex items-center justify-center gap-4">
         <div
           className={`p-2 bg-slate-400 rounded-full cursor-pointer hover:bg-slate-700 ${

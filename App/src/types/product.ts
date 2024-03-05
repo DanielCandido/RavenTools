@@ -5,6 +5,10 @@ export interface ProductTradepack {
   amount: number;
 }
 
+export interface IProductOutfit extends ProductTradepack {
+  description?: string;
+}
+
 export interface ProductPrice {
   name: ProductName;
   value: number;

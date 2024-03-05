@@ -8,9 +8,16 @@ import fetchData from "@/hooks/fetchData";
 interface Props {
   onSelect: (archetype: Archetype) => void;
   selected?: Archetype;
+  textLabel?: string;
+  style?: string;
 }
 
-export const ArcheTypeSelect = ({ onSelect, selected }: Props) => {
+export const ArcheTypeSelect = ({
+  onSelect,
+  selected,
+  style,
+  textLabel,
+}: Props) => {
   const [archetypes, setArchetypes] = React.useState<Archetype[]>([]);
 
   React.useEffect(() => {
@@ -24,8 +31,17 @@ export const ArcheTypeSelect = ({ onSelect, selected }: Props) => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-4 items-center justify-center">
-      <p>Archetype:</p>
+    <div
+      className={`${
+        style ? style : "flex flex-col gap-4 items-center justify-center"
+      } `}
+    >
+      <label
+        htmlFor="name"
+        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >
+        {textLabel ?? "Archetype:"}
+      </label>
       <div className="flex flex-row justify-around w-auto max-w-[500px] gap-4">
         {archetypes.map((e) => (
           <div
